@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/3abdd5ee7f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Top header Logo and navbar-->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="PortImages/images/logo.png" class="logo" >
+
+                <ul id="sideMenu ">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-regular fa-circle-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Web Devloper/Designer</p>
+                <h1>Hi, I'm <span>Rahul</span><br>A Web Developer</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--About section-->
+    <div id="about">
+        <div class="container">
+
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="PortImages/images/myimg.jpg" alt="">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt molestias incidunt 
+                    commodi explicabo nisi assumenda, eos veniam quae corrupti iure accusantium 
+                    saepe! Quaerat vel fugiat labore expedita rerum reprehenderit accusantium.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam et soluta suscipit 
+                    error in eum distinctio repudiandae sit tempora assumenda. In quos nobis aspernatur 
+                    necessitatibus autem magni, dolorem totam dicta.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Designing</span><br>Designing web/App interfaces</li>
+                            <li><span>Front End Development</span><br>Web App Development</li>
+                            <li><span>React Developer</span><br>React Framework </li>
+                            <li><span>HTML/CSS</span><br></li>
+                            <li><span>JavaScript</span><br> </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Fresher</span><br>Web Development</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>Completed Full Stack in Web Development </li>
+                            <li><span>2022</span><br>Diploma in Computer Science and Engineering at SBGI Miraj</li>
+                            <li><span>2023</span><br>B-Tech in Computer Engineering in RIT Islampur</li>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--This is services part-->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">SERVICES</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2 class="service-title">HTML/CSS</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Dicta dolorem recusandae, culpa illo cum dolores ducimus 
+                        inventore itaque eaque sed non dolor minima, labore, 
+                        suscipit molestiae sunt ullam animi nisi!</p>
+                        <a href="">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2 class="service-title">Javascript</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Dicta dolorem recusandae, culpa illo cum dolores ducimus 
+                        inventore itaque eaque sed non dolor minima, labore, 
+                        suscipit molestiae sunt ullam animi nisi!</p>
+                        <a href="">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2 class="service-title">React Js</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Dicta dolorem recusandae, culpa illo cum dolores ducimus 
+                        inventore itaque eaque sed non dolor minima, labore, 
+                        suscipit molestiae sunt ullam animi nisi!</p>
+                        <a href="">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2 class="service-title">Node js</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Dicta dolorem recusandae, culpa illo cum dolores ducimus 
+                        inventore itaque eaque sed non dolor minima, labore, 
+                        suscipit molestiae sunt ullam animi nisi!</p>
+                        <a href="">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2 class="service-title">MongoDB Database</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Dicta dolorem recusandae, culpa illo cum dolores ducimus 
+                        inventore itaque eaque sed non dolor minima, labore, 
+                        suscipit molestiae sunt ullam animi nisi!</p>
+                        <a href="">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Portfolio part-->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My work</h1>
+            <div class="work-list">
+                
+                <div class="work">
+                    <img src="PortImages/images/Ecommerce.png" alt="">
+                    <div class="layer">
+                        <h3>E-commerce Website</h3>
+                        <p>The website is made with React, Redux, javascript, tailwindCss,
+                             provides you latest clothing and 
+                            shopping products for you with latest
+                            brands.
+                        </p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="PortImages/images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Portfolio</h3>
+                        <p>The website shows all the information
+                            about me and my projects education and 
+                            knowladge
+                        </p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="PortImages/images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Chat Application(Pending)</h3>
+                        <p>The website shows all the information
+                            about me and my projects education and 
+                            knowladge
+                        </p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+    </div>
+
+
+    <!--Contact part-->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="content-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>rahulmk1434@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>7028034080</p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/flashh_x37"><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="PortImages/images/my-cv.pdf" download class="btn btn-2">Download CV</a>
+                </div>
+                <div class="content-right">
+                    <form >
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" id="" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Rahul. <i class="fas fa-heart"></i> Mhaske</p>
+        </div>
+    </div>
+
+
+
+    <!--Script for work section-->
+    <script>        
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+
+            event.currentTarget.classList.add("active-link");/* It will add the active-link and display the color */
+            document.getElementById(tabname).classList.add("active-tab"); /* This will add the contents of other fields like, experiance and education */
+
+        }
+    </script>
+
+    <!--Script for sidemenu for small screens-->
+    <script>
+        var sidemenu = document.getElementById("sideMenu");
+        function openMenu(){
+            sidemenu.style.right = "0";
+        }
+        
+        function closeMenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+
+    <script>
+        const form = document.querySelector('form');
+        
+        function sendEmail(){
+            Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "username",
+            Password : "password",
+            To : 'them@website.com',
+            From : "you@isp.com",
+            Subject : "This is the subject",
+            Body : "And this is the body"
+            }).then(
+            message => alert(message)
+            );
+        }
+
+    </script>
+
+
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+
+</body>
+</html>
